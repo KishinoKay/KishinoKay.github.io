@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuto Asari's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header-logo">Yuto Asari's Portfolio</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">自己紹介</a></li>
+                    <li><a href="#works">開発記録</a></li>
+                    <li><a href="#skills">開発スキル</a></li>
+                    <li><a href="#experience">経験</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="profile">
+                    <img src="images/profile.jpg" alt="浅利優斗のプロフィール写真" class="profile-img">
+                    <h2 class="profile-name">浅利 優斗 (Yuto Asari)</h2>
+                    <p class="profile-university">龍谷大学 先端理工学部 知能情報メディア課程</p>
+                    <p class="profile-bio">
+                        AIとXR技術で、世界をより面白くする「体験」を創造します。<br>
+                        チームでアイデアを形にするプロセスに魅力を感じています。チームのマネジメントが得意です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section">
+            <div class="container">
+                <h2 class="section-title">Works</h2>
+                <div class="works-grid">
+                    
+                    <div class="work-card">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/profile.jpg" alt="構内マップの画像1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/profile.jpg" alt="構内マップの画像2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/profile.jpg" alt="構内マップの画像3">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">デジタル2D-3D構内マップ</h3>
+                            <p class="work-description">
+                                6人チームで挑んだ大学のプロジェクトリサーチ。「新入生がキャンパスで迷わないように」という課題を解決するため、Webアプリを企画・開発。プロダクトマネージャーとして進捗管理や仕様策定を主導し、Blenderでの3Dモデリングも担当しました。
+                            </p>
+                            <div class="work-links">
+                                <a href="https://github.com/0xygen123/PR_Frontend" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> Frontend</a>
+                                <a href="https://github.com/0xygen123/PR_Map" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> Map</a>
+                                <a href="https://www.youtube.com/your-pr-video-link" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k-oOF4ZrU78?si=kE726MZu3c1RR7Z-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">KANSAIUP (ハッカソン開発)</h3>
+                            <p class="work-description">
+                                7日間の学生ハッカソンで企画・開発した3Dアスレチックゲーム。実在都市モデル(PLATEAU)とChatGPT APIを組合せ、マルチプレイにも対応。プロジェクト管理とレベルデザインを担当し、限られた時間で動く作品を完成に導きました。
+                            </p>
+                            <div class="work-links">
+                                <a href="https://github.com/kc3hack/2025_21" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://www.youtube.com/your-kansaiup-video-link" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/ohMR_FIygZo?si=x6WeM34CzFDTJI6R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">嗜好一致度測定アプリ (個人開発)</h3>
+                            <p class="work-description">
+                                大学で学んだ推薦システムの知識を活かし、ユーザー間の嗜好一致度をコサイン類似度で算出するアプリを開発。情報が少ないFletフレームワークを公式ドキュメントを読み解きながら活用し、課題解決能力を実践しました。
+                            </p>
+                            <div class="work-links">
+                                <a href="https://github.com/Ryukoku-Horizon/2024-BasicGroup-SpringApp-Y230193" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://youtu.be/ohMR_FIygZo" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#"><span>C#</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"><span>Unity</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender"><span>Blender</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git/GitHub</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="AI/ML"><span>AI/ML</span></div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oculus/oculus-original.svg" alt="AR/VR"><span>AR/VR/XR</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Education & Activities</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <p class="experience-date">2022.04 - 現在</p>
+                        <h3 class="experience-title">龍谷大学 先端理工学部 知能情報メディア課程</h3>
+                        <p class="experience-description">AI・機械学習とXR(VR/AR)技術を2つの柱として学習。理論と実践を両立させ、使えるスキルへの昇華を心掛けています。</p>
+                    </div>
+                    <div class="experience-item">
+                        <p class="experience-date">2025.02 (7日間)</p>
+                        <h3 class="experience-title">KC3Hack 2025 学生ハッカソン参加</h3>
+                        <p class="experience-description">3人チームのプロダクトマネージャーとして企画から参加。リアルな都市モデルとAIを活用した3Dゲームを完成させました。</p>
+                    </div>
+                    <div class="experience-item">
+                        <p class="experience-date">2024年度</p>
+                        <h3 class="experience-title">プロジェクトリサーチ (学生主体の研究科目)</h3>
+                        <p class="experience-description">チームのPMとして「3D構内マップ」を企画・開発。技術選定からタスク管理、3Dモデリングまで幅広く担当しました。</p>
+                    </div>
+                    <div class="experience-item">
+                        <p class="experience-date">高校時代</p>
+                        <h3 class="experience-title">SSH 課外研究プログラム</h3>
+                        <p class="experience-description">化学分野の自主研究に1年間取り組み、チームでの論文執筆や英語での研究発表を経験。長期的なプロジェクト推進力を養いました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yuto Asari. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
