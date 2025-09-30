@@ -134,6 +134,10 @@ html {
     font-size: 1.2em;
     color: #888;
 }
+.profile-affiliation {
+    font-size: 1.2em;
+    color: #888;
+}
 .profile-bio {
     max-width: 600px;
     margin: 20px auto 0;
