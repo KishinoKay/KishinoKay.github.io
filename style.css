@@ -328,3 +328,167 @@ body.dark-mode .work-link.github { background-color: #555; }
 .swiper-pagination-bullet-active {
     background: #ffffff; /* アクティブな点の色を白に */
 }
+
+/* モーダル基本スタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    /* 既存のスタイルはそのまま */
+    background: #fff;
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    max-width: 900px; /* 横幅を広げる */
+    width: 95%;
+    position: relative;
+
+    /* ↓↓ ここから追加・変更 ↓↓ */
+    max-height: 90vh; /* ビューポートの高さの90%を最大高さに設定 */
+    overflow-y: auto; /* 縦方向にスクロールバーを表示 */
+    -webkit-overflow-scrolling: touch; /* iOSでのスムーズなスクロール */
+}
+.modal-content h2 {
+    font-size: 2.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border-bottom: none;      /* 下線を消す */
+    color: #222;              /* 青→黒に */
+    padding-bottom: 0;        /* 下余白も調整 */
+}
+
+/* --- モーダル内 Notion風デザイン --- */
+.modal-content h2, .modal-content h3 {
+    color: #222;
+    font-weight: 700;
+    margin-top: 2.2em;
+    margin-bottom: 0.7em;
+    font-size: 1.5em;
+    letter-spacing: 0.01em;
+    border: none;
+    padding-bottom: 0.3em;
+    position: relative;
+}
+.modal-content h2::after, .modal-content h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #e5e7eb;
+    margin-top: 0.4em;
+    border-radius: 1px;
+}
+.modal-content h2:first-child, .modal-content h3:first-child {
+    margin-top: 0;
+}
+.modal-content ul, .modal-content ol {
+    list-style: none;
+    margin: 1.2em 0 1.2em 0;
+    padding: 0;
+}
+.modal-content li {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+    border-left: none;
+    padding-left: 0.8em;
+    border-radius: 0;
+    border-bottom: 2px solid #e5e7eb; /* h2の下線と同じ太さ(2px)に */
+}
+.modal-content li:last-child {
+    border-bottom: none;
+}
+.modal-content p {
+    font-size: 1.08em;
+    margin-bottom: 1.2em;
+    line-height: 1.8;
+}
+.modal-content strong {
+    color: #222;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+/* セクション間の区切り線 */
+.modal-content .section-divider {
+    border-bottom: 1.5px solid #e5e7eb;
+    margin: 2em 0;
+}
+
+/* 各項目の間に灰色の線を引く */
+.modal-content ul {
+    padding-left: 1.3em;
+    margin-bottom: 1.5em;
+}
+.modal-content li {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+    border-left: none;         /* 左線を消す */
+    padding-left: 0.8em;
+    border-radius: 4px;
+    border-bottom: 1px solid #e5e7eb; /* 下に灰色の線 */
+}
+.modal-content li:last-child {
+    border-bottom: none;       /* 最後の項目の線は消す */
+}
+
+/* モーダル内Swiper画像の高さを大きくする */
+.modal-swiper img {
+    /* 縦方向の最大サイズを画面の高さの80%に拡大 */
+    max-height: 80vh; 
+    /* 横方向がはみ出ないように最大幅を100%に設定 */
+    max-width: 100%;  
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.work-detail-list.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+.work-detail-list.expand {
+    max-height: 1000px; /* 十分大きな値にしてください */
+    transition: max-height 0.5s;
+}
+.toggle-detail-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+/* ダークモード用スタイル調整 */
+body.dark-mode .modal-content {
+    background: #23243a;
+    color: #e0e0e0;
+}
+body.dark-mode .modal-content h2,
+body.dark-mode .modal-content h3,
+body.dark-mode .modal-content strong {
+    color: #fff;
+}
+body.dark-mode .modal-content li {
+    border-bottom: 2px solid #44485a;
+}
+body.dark-mode .modal-content h2::after,
+body.dark-mode .modal-content h3::after,
+body.dark-mode .modal-content .section-divider {
+    background: #44485a;
+    border-bottom: 1.5px solid #44485a;
+}
+body.dark-mode .modal-swiper img {
+    background: #23243a;
+}

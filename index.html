@@ -46,18 +46,19 @@
             <div class="container">
                 <h2 class="section-title">Works</h2>
                 <div class="works-grid">
-                    
-                    <div class="work-card">
+
+                    <!-- デジタル2D-3D構内マップ -->
+                    <div class="work-card" data-work="map">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/profile.jpg" alt="構内マップの画像1">
+                                    <img src="images/PRMap/image.png" alt="構内マップの画像1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/profile.jpg" alt="構内マップの画像2">
+                                    <img src="images/PRMap/2025-10-12 035845.png" alt="構内マップの画像2">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="images/profile.jpg" alt="構内マップの画像3">
+                                    <img src="images/PRMap/2025-10-12 035112.png" alt="構内マップの画像3">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -66,26 +67,26 @@
                         </div>
                         <div class="work-content">
                             <h3 class="work-title">デジタル2D-3D構内マップ</h3>
-                            <p class="work-description">
-                                6人チームで挑んだ大学のプロジェクトリサーチ。「新入生がキャンパスで迷わないように」という課題を解決するため、Webアプリを企画・開発。プロダクトマネージャーとして進捗管理や仕様策定を主導し、Blenderでの3Dモデリングも担当しました。
-                            </p>
+                            <div class="work-summary">
+                                龍谷大学キャンパス内の迷子問題を解決するためのWebアプリ。
+                            </div>
                             <div class="work-links">
-                                <a href="https://github.com/0xygen123/PR_Frontend" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> Frontend</a>
-                                <a href="https://github.com/0xygen123/PR_Map" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> Map</a>
+                                <a href="https://github.com/0xygen123/PR_Frontend" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
                                 <a href="https://www.youtube.com/your-pr-video-link" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="work-card">
+                    <!-- KANSAIUP（ハッカソン） -->
+                    <div class="work-card" data-work="kansaiup">
                         <div class="video-container">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="work-content">
                             <h3 class="work-title">KANSAIUP (ハッカソン開発)</h3>
-                            <p class="work-description">
-                                7日間の学生ハッカソンで企画・開発した3Dアスレチックゲーム。実在都市モデル(PLATEAU)とChatGPT APIを組合せ、マルチプレイにも対応。プロジェクト管理とレベルデザインを担当し、限られた時間の中、高クオリティな作品を完成させました。
-                            </p>
+                            <div class="work-summary">
+                                実在都市モデルを使った3Dアスレチックゲーム（KC3Hack 2025）。
+                            </div>
                             <div class="work-links">
                                 <a href="https://github.com/kc3hack/2025_21" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
                                 <a href="https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
@@ -93,21 +94,52 @@
                         </div>
                     </div>
 
-                    <div class="work-card">
+                    <!-- 嗜好一致度測定アプリ -->
+                    <div class="work-card" data-work="shikou">
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/ohMR_FIygZo?si=x6WeM34CzFDTJI6R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="work-content">
                             <h3 class="work-title">嗜好一致度測定アプリ (個人開発)</h3>
-                            <p class="work-description">
-                                大学で学んだ推薦システムの知識を活かし、ユーザー間の嗜好一致度をコサイン類似度で算出するアプリを開発。情報が少ないFletフレームワークを公式ドキュメントを読み解きながら活用し、課題解決能力を実践しました。
-                            </p>
+                            <div class="work-summary">
+                                ユーザー間の嗜好一致度をコサイン類似度で算出・可視化するデスクトップアプリ。
+                            </div>
                             <div class="work-links">
                                 <a href="https://github.com/KishinoKay/DOMINATORN" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
                                 <a href="https://youtu.be/ohMR_FIygZo" target="_blank" rel="noopener noreferrer" class="work-link youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Papers-Please_feat-RYUKOKU- -->
+                    <div class="work-card" data-work="papers">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/Papers-Please_feat-RYUKOKU-/2025-10-12 034402.png" alt="タイトル画面の画像1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/profile.jpg" alt="ゲーム本編の画像2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/profile.jpg" alt="ゲーム本編の画像3">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Papers-Please_feat-RYUKOKU-</h3>
+                            <div class="work-summary">
+                                「Papers, Please」風のゲームシステムをUnityで再現したオリジナル作品。
+                            </div>
+                            <div class="work-links">
+                                <a href="https://github.com/KishinoKay/Papers-Please_feat-RYUKOKU-" target="_blank" rel="noopener noreferrer" class="work-link github"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -156,6 +188,14 @@
             </div>
         </section>
     </main>
+
+    <!-- モーダル -->
+    <div id="work-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
