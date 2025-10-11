@@ -1,4 +1,3 @@
-# KishinoKay.github.io
 # Yuto Asari's Portfolio
 
 ![ポートフォリオサイトのスクリーンショット](images/sukusyo.png)
