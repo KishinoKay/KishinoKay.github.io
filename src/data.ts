@@ -1,0 +1,160 @@
+// src/data.ts
+import type { Work, Skill, Experience } from './types';
+
+// 1. 作品データ
+export const worksData: Work[] = [
+    {
+        id: "map",
+        title: "デジタル2D-3D構内マップ",
+        summary: "龍谷大学キャンパス内の迷子問題を解決するためのWebアプリ。",
+        images: ["/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
+        video: null,
+        links: {
+        github: "https://github.com/0xygen123/PR_Frontend",
+        youtube: "https://www.youtube.com/your-pr-video-link",
+        },
+        details: {
+        overview: "大学のプロジェクトリサーチ科目で、龍谷大学キャンパス内の迷子問題を解決するためのWebアプリを開発。",
+        devPeriod: "4ヶ月",
+        teamSize: "6人",
+        techStack: "Unity, React, Vite, TypeScript, Tailwind CSS, FastAPI, Ubuntu Server, Blender, GitHub",
+        role: "プロジェクトマネジメント、3Dモデリング、進捗管理",
+        techPoints: [
+            "UnityとReactのWebGL連携",
+            "2D/3Dマップ切替と経路探索",
+            "GPS誤差補正、シームレスなUI/UX設計",
+            "サーバー自前構築とデプロイ"
+        ],
+        commitment: [
+            "Notionで仕様・スケジュール管理、チームのコミュニケーション促進",
+            "NavMesh生成や3Dモデルの最適化",
+            "メンバーの課題解決をサポートし、全体の進行を調整"
+        ]
+        }
+    },
+    {
+        id: "kansaiup",
+        title: "KANSAIUP (ハッカソン開発)",
+        summary: "実在都市モデルを使った3Dアスレチックゲーム（KC3Hack 2025）。",
+        images: ["/images/profile.jpg"],
+        video: "https://www.youtube.com/embed/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM",
+        links: {
+        github: "https://github.com/kc3hack/2025_21",
+        youtube: "https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM",
+        },
+        details: {
+        overview: "KC3Hack 2025（関西情報系学生団体交流会主催）で、実在都市モデルを使った3Dアスレチックゲームを開発。",
+        devPeriod: "7日間",
+        teamSize: "3人",
+        techStack: "Unity, Photon Unity Networking 2, ChatGPT API, GitHub",
+        role: "プロジェクト管理、企画・レベルデザイン、仕様策定・ドキュメント化",
+        techPoints: [
+            "PLATEAU都市モデルによる没入感の演出",
+            "オンラインマルチプレイ実装",
+            "AIによる関西解説（ChatGPT API連携）"
+        ],
+        commitment: [
+            "リスク管理とタスク分担の徹底",
+            "短期間での高品質なアウトプット",
+            "教育的要素とゲーム性の両立"
+        ]
+        }
+    },
+    {
+        id: "shikou",
+        title: "嗜好一致度測定アプリ (個人開発)",
+        summary: "ユーザーの嗜好と特定個人の嗜好データ群との一致度を予測・可視化するアプリ。",
+        images: ["/images/profile.jpg"],
+        video: "https://www.youtube.com/embed/ohMR_FIygZo?si=x6WeM34CzFDTJI6R",
+        links: {
+        github: "https://github.com/KishinoKay/DOMINATORN",
+        youtube: "https://youtu.be/ohMR_FIygZo",
+        },
+        details: {
+        overview: "ユーザーの入力データと特定の個人が持つ多数の嗜好データを比較し、k-近傍法（k-NN）を用いて総合的な嗜好一致度を算出します。",
+        devPeriod: "1週間",
+        teamSize: "個人開発",
+        techStack: "Python, Flet, SQLite",
+        role: "企画、設計、実装、UIデザイン、テストまで全工程",
+        techPoints: [
+            "機械学習アルゴリズム「k-近傍法（k-NN）」を応用",
+            "色相計算に独自の「円環距離」を導入",
+            "Fletによるクロスプラットフォーム対応"
+        ],
+        commitment: [
+            "データ特性に合わせたアルゴリズムの改良",
+            "学術知識の実践力",
+            "日本語情報が少ない技術の公式ドキュメント解読"
+        ]
+        }
+    },
+    {
+        id: "papers",
+        title: "Papers-Please_feat-RYUKOKU-",
+        summary: "「Papers, Please」風のゲームシステムをUnityで再現したオリジナル作品。",
+        images: ["/images/Papers-Please_feat-RYUKOKU-/2025-10-12 034402.png", "/images/profile.jpg", "/images/profile.jpg"],
+        video: null,
+        links: {
+        github: "https://github.com/KishinoKay/Papers-Please_feat-RYUKOKU-",
+        },
+        details: {
+        overview: "「Papers, Please」風のゲームシステムをUnityで再現し、龍谷大学の要素を盛り込んだオリジナル作品。",
+        devPeriod: "2ヶ月",
+        teamSize: "4人",
+        techStack: "Unity, C#, GitHub",
+        role: "ゲームシステム設計、UI/UX設計、主要スクリプト実装、仕様書作成",
+        techPoints: [
+            "複数シーン構成によるゲーム進行管理",
+            "ScriptableObjectやJSONによるデータ管理"
+        ],
+        commitment: [
+            "大学オリジナル要素の追加と世界観の再現",
+            "仕様書・設計書を整備し、共同開発の効率化"
+        ]
+        }
+    }
+];
+
+// 2. スキルデータ
+export const skillsData: Skill[] = [
+    { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "C#", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "Unity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" },
+    { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { name: "Blender", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "AI/ML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+];
+
+// 3. 経験データ
+export const experienceData: Experience[] = [
+    { date: "2025年度 - 現在", title: "プロジェクトリサーチ", desc: "チームのPMとして「3D構内マップ」を企画・開発。技術選定からタスク管理、3Dモデリングまで幅広く担当。" },
+    { date: "2025.02 (7日間)", title: "KC3Hack 2025 学生ハッカソン参加", desc: "3人チームのPMとして企画から参加。リアルな都市モデルとAIを活用した3Dゲームを完成させました。" },
+    { date: "大学時代", title: "龍谷大学 先端理工学部", desc: "AI・機械学習とXR技術を学習。プログラミング認定同好会Horizon所属。" },
+    { date: "高校時代", title: "SSH 課外研究プログラム", desc: "化学分野の自主研究、論文執筆、英語発表を経験。" },
+];
+
+// 4. 研究データ
+export const researchData = {
+    lab: {
+        name: "藤本研究室 (XR Interface Lab)",
+        sub: "龍谷大学 先端理工学部 知能情報メディア課程",
+        image: "/images/Study/xr-interaface-lab.png",
+        description: `「XRにより、苦手を得意に、得意をもっと得意に、より生きやすく」
+    人が社会で生きていくには、学習、仕事、対話など様々なスキルが必要です。しかし、個人の特性と求められるスキルのミスマッチが「生きづらさ」を生むことがあります。
+    本研究室では、拡張現実感(AR)とバーチャルリアリティ(VR)技術を用いて、人がスキルを効率的に習得したり、ハンディキャップを技術で補ったりするシステムを研究しています。`,
+        links: [
+            { label: "研究室サイト", url: "https://yfujimoto.cfbx.jp/" },
+            { label: "大学教員紹介", url: "https://www.rikou.ryukoku.ac.jp/teachers/fujimoto.html" }
+        ]
+    },
+    personal: {
+        theme: "LLMとARを用いた対面対話支援",
+        image: "/images/Study/AR-LLM-conversation-support-1024x403.jpg",
+        motivation: `あらゆる社会活動の基盤となるコミュニケーション能力を、技術の力でどう拡張できるかに興味がありました。特に、ARという視覚情報提示技術が対人心理に与える影響や、新しい意思疎通の可能性に魅力を感じたことがきっかけです。`,
+        goal: `HoloLens等のデバイスと生成AIを連携させ、会話中のトピック提案を行うシステムの実用性を検証することです。特に、システム使用時の「対話の円滑さ」と「違和感」の関係性を明らかにし、自然な対話を阻害しない改善案を策定したいと考えています。`,
+        progress: `現在はテーマ検討段階にあり、主にARのインターフェースデザインや対人心理学に関する先行研究の調査を進めています。`,
+        notionLink: "https://oil-bobcat-321.notion.site/2bf9a84f9a5d801e86b6f984f39e342a?source=copy_link"
+    }
+};
