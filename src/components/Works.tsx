@@ -60,6 +60,7 @@ const Works: React.FC<Props> = ({ onWorkClick }) => {
                     {work.links.map((link, index) => (
                         <LinkButton
                             key={index}
+                            label={link.label}
                             href={link.url}
                             type={link.type}
                             note={link.note} // ボタンの文字を指定

@@ -67,6 +67,7 @@ const WorkModal: React.FC<Props> = ({ work, onClose }) => {
             {work.links.map((link, index) => (
                 <LinkButton
                     key={index}
+                    label={link.label}
                     href={link.url}
                     type={link.type}
                     note={link.note} // ボタンの文字を指定

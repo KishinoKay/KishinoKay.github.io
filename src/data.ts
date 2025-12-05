@@ -7,15 +7,16 @@ export const worksData: Work[] = [
         id: "map",
         title: "デジタル2D-3D構内マップ",
         summary: "龍谷大学キャンパス内の迷子問題を解決するためのWebアプリ。",
-        images: ["/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
+        images: ["public/images/PRMap/postaer.png", "public/images/PRMap/happyou.png", "/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
         video: null,
         links: [
+            {label: "アプリを開く",url: "https://r-navi.math.ryukoku.ac.jp/", type: "other" as LinkType },
             {url: "https://github.com/0xygen123/PR_Frontend", type: "github" as LinkType },
-            {url: "https://www.youtube.com/your-pr-video-link", type: "youtube" as LinkType }
+            {url: "https://oil-bobcat-321.notion.site/2D-3D-2c09a84f9a5d80f5b1ecd651267f4405?source=copy_link", type: "notion" as LinkType }
         ],
         details: {
         overview: "大学のプロジェクトリサーチ科目で、龍谷大学キャンパス内の迷子問題を解決するためのWebアプリを開発。",
-        devPeriod: "4ヶ月",
+        devPeriod: "3ヶ月",
         teamSize: "6人",
         techStack: "Unity, React, Vite, TypeScript, Tailwind CSS, FastAPI, Ubuntu Server, Blender, GitHub",
         role: "プロジェクトマネジメント、3Dモデリング、進捗管理",
@@ -92,12 +93,12 @@ export const worksData: Work[] = [
         id: "papers",
         title: "Papers-Please_feat-RYUKOKU-",
         summary: "「Papers, Please」風のゲームシステムをUnityで再現したオリジナル作品。",
-        images: ["/images/Papers-Please_feat-RYUKOKU-/2025-10-12 034402.png", "/images/profile.jpg", "/images/profile.jpg"],
+        images: ["/images/Papers-Please_feat-RYUKOKU-/2025-10-12 034402.png", "/images/Papers-Please_feat-RYUKOKU-/2025-12-06 023647.png"],
         video: null,
         links: [{url: "https://github.com/KishinoKay/Papers-Please_feat-RYUKOKU-", type: "github" as LinkType }],
         details: {
         overview: "「Papers, Please」風のゲームシステムをUnityで再現し、龍谷大学の要素を盛り込んだオリジナル作品。",
-        devPeriod: "2ヶ月",
+        devPeriod: "1ヶ月",
         teamSize: "4人",
         techStack: "Unity, C#, GitHub",
         role: "ゲームシステム設計、UI/UX設計、主要スクリプト実装、仕様書作成",
