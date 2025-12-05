@@ -2,8 +2,10 @@
 
 // 作品データの型定義
 export interface WorkLinks {
-    github?: string;
-    youtube?: string;
+    label?: string;
+    url?: string;
+    type: LinkType;
+    note?: string;
 }
 
 export interface WorkDetails {
@@ -22,7 +24,7 @@ export interface Work {
     summary: string;
     images: string[];
     video: string | null;
-    links: WorkLinks;
+    links: WorkLinks[];
     details: WorkDetails;
 }
 
@@ -37,4 +39,10 @@ export interface Experience {
     date: string;
     title: string;
     desc: string;
+    note?: string;
+    url?: string;
+    type?: LinkType;
 }
+
+// 1. リンクの種類の型定義
+export type LinkType = 'github' | 'youtube' | 'notion' | 'other';

@@ -2,6 +2,7 @@ import React from 'react';
 import type { Work } from '../types';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
+import LinkButton from './LinkButton';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -63,16 +64,14 @@ const WorkModal: React.FC<Props> = ({ work, onClose }) => {
             </ul>
 
             <div className="work-links">
-                {work.links.github && (
-                <a href={work.links.github} target="_blank" rel="noopener noreferrer" className="work-link github">
-                    <i className="fa-brands fa-github"></i> GitHub
-                </a>
-                )}
-                {work.links.youtube && (
-                <a href={work.links.youtube} target="_blank" rel="noopener noreferrer" className="work-link youtube">
-                    <i className="fa-brands fa-youtube"></i> YouTube
-                </a>
-                )}
+            {work.links.map((link, index) => (
+                <LinkButton
+                    key={index}
+                    href={link.url}
+                    type={link.type}
+                    note={link.note} // ボタンの文字を指定
+                />
+            ))}
             </div>
         </div>
         </div>

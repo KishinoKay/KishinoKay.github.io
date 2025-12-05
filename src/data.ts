@@ -1,5 +1,5 @@
 // src/data.ts
-import type { Work, Skill, Experience } from './types';
+import type { Work, Skill, Experience, LinkType } from './types';
 
 // 1. 作品データ
 export const worksData: Work[] = [
@@ -9,10 +9,10 @@ export const worksData: Work[] = [
         summary: "龍谷大学キャンパス内の迷子問題を解決するためのWebアプリ。",
         images: ["/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
         video: null,
-        links: {
-        github: "https://github.com/0xygen123/PR_Frontend",
-        youtube: "https://www.youtube.com/your-pr-video-link",
-        },
+        links: [
+            {url: "https://github.com/0xygen123/PR_Frontend", type: "github" as LinkType },
+            {url: "https://www.youtube.com/your-pr-video-link", type: "youtube" as LinkType }
+        ],
         details: {
         overview: "大学のプロジェクトリサーチ科目で、龍谷大学キャンパス内の迷子問題を解決するためのWebアプリを開発。",
         devPeriod: "4ヶ月",
@@ -38,10 +38,10 @@ export const worksData: Work[] = [
         summary: "実在都市モデルを使った3Dアスレチックゲーム（KC3Hack 2025）。",
         images: ["/images/profile.jpg"],
         video: "https://www.youtube.com/embed/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM",
-        links: {
-        github: "https://github.com/kc3hack/2025_21",
-        youtube: "https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM",
-        },
+        links: [
+            {url: "https://github.com/kc3hack/2025_21", type: "github" as LinkType },
+            {url: "https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM", type: "youtube" as LinkType }
+        ],
         details: {
         overview: "KC3Hack 2025（関西情報系学生団体交流会主催）で、実在都市モデルを使った3Dアスレチックゲームを開発。",
         devPeriod: "7日間",
@@ -66,10 +66,10 @@ export const worksData: Work[] = [
         summary: "ユーザーの嗜好と特定個人の嗜好データ群との一致度を予測・可視化するアプリ。",
         images: ["/images/profile.jpg"],
         video: "https://www.youtube.com/embed/ohMR_FIygZo?si=x6WeM34CzFDTJI6R",
-        links: {
-        github: "https://github.com/KishinoKay/DOMINATORN",
-        youtube: "https://youtu.be/ohMR_FIygZo",
-        },
+        links: [
+            {url: "https://github.com/KishinoKay/DOMINATORN", type: "github" as LinkType },
+            {url: "https://youtu.be/ohMR_FIygZo", type: "youtube" as LinkType }
+        ],
         details: {
         overview: "ユーザーの入力データと特定の個人が持つ多数の嗜好データを比較し、k-近傍法（k-NN）を用いて総合的な嗜好一致度を算出します。",
         devPeriod: "1週間",
@@ -94,9 +94,7 @@ export const worksData: Work[] = [
         summary: "「Papers, Please」風のゲームシステムをUnityで再現したオリジナル作品。",
         images: ["/images/Papers-Please_feat-RYUKOKU-/2025-10-12 034402.png", "/images/profile.jpg", "/images/profile.jpg"],
         video: null,
-        links: {
-        github: "https://github.com/KishinoKay/Papers-Please_feat-RYUKOKU-",
-        },
+        links: [{url: "https://github.com/KishinoKay/Papers-Please_feat-RYUKOKU-", type: "github" as LinkType }],
         details: {
         overview: "「Papers, Please」風のゲームシステムをUnityで再現し、龍谷大学の要素を盛り込んだオリジナル作品。",
         devPeriod: "2ヶ月",
@@ -131,8 +129,8 @@ export const skillsData: Skill[] = [
 export const experienceData: Experience[] = [
     { date: "2025年度 - 現在", title: "プロジェクトリサーチ", desc: "チームのPMとして「3D構内マップ」を企画・開発。技術選定からタスク管理、3Dモデリングまで幅広く担当。" },
     { date: "2025.02 (7日間)", title: "KC3Hack 2025 学生ハッカソン参加", desc: "3人チームのPMとして企画から参加。リアルな都市モデルとAIを活用した3Dゲームを完成させました。" },
-    { date: "大学時代", title: "龍谷大学 先端理工学部", desc: "AI・機械学習とXR技術を学習。プログラミング認定同好会Horizon所属。" },
-    { date: "高校時代", title: "SSH 課外研究プログラム", desc: "化学分野の自主研究、論文執筆、英語発表を経験。" },
+    { date: "大学入学(2023年4月)", title: "龍谷大学 先端理工学部 知能情報メディア課程", desc: "AI・機械学習とXR技術を学習。プログラミング認定同好会Horizon所属" },
+    { date: "高校時代(2021年4月〜2022年3月)", title: "SSH 課題研究（化学ゼミ）", desc: "「竹炭による硝酸イオンの吸着」を探究。分光光度計や遠心分離機、恒温槽等の分析機器を用いPPDACサイクルを実践。予想外の実験結果に対し、仮説の再構築や誤差要因の分析を粘り強く行い、科学的なプロセスを体得しました。" , url: "https://oil-bobcat-321.notion.site/SSH-2c09a84f9a5d801bb4acf87dfdcb78aa?source=copy_link", type: "notion" as LinkType , note: "Notionで詳細を見る" },
 ];
 
 // 4. 研究データ
@@ -145,8 +143,8 @@ export const researchData = {
     人が社会で生きていくには、学習、仕事、対話など様々なスキルが必要です。しかし、個人の特性と求められるスキルのミスマッチが「生きづらさ」を生むことがあります。
     本研究室では、拡張現実感(AR)とバーチャルリアリティ(VR)技術を用いて、人がスキルを効率的に習得したり、ハンディキャップを技術で補ったりするシステムを研究しています。`,
         links: [
-            { label: "研究室サイト", url: "https://yfujimoto.cfbx.jp/" },
-            { label: "大学教員紹介", url: "https://www.rikou.ryukoku.ac.jp/teachers/fujimoto.html" }
+            { label: "研究室サイト", url: "https://yfujimoto.cfbx.jp/", type: "other" as LinkType },
+            { label: "大学教員紹介", url: "https://www.rikou.ryukoku.ac.jp/teachers/fujimoto.html", type: "other" as LinkType }
         ]
     },
     personal: {
@@ -155,6 +153,12 @@ export const researchData = {
         motivation: `あらゆる社会活動の基盤となるコミュニケーション能力を、技術の力でどう拡張できるかに興味がありました。特に、ARという視覚情報提示技術が対人心理に与える影響や、新しい意思疎通の可能性に魅力を感じたことがきっかけです。`,
         goal: `HoloLens等のデバイスと生成AIを連携させ、会話中のトピック提案を行うシステムの実用性を検証することです。特に、システム使用時の「対話の円滑さ」と「違和感」の関係性を明らかにし、自然な対話を阻害しない改善案を策定したいと考えています。`,
         progress: `現在はテーマ検討段階にあり、主にARのインターフェースデザインや対人心理学に関する先行研究の調査を進めています。`,
-        notionLink: "https://oil-bobcat-321.notion.site/2bf9a84f9a5d801e86b6f984f39e342a?source=copy_link"
+        links: [
+            {
+                note: "Notionで詳細を見る",
+                url: "https://oil-bobcat-321.notion.site/2bf9a84f9a5d801e86b6f984f39e342a?source=copy_link",
+                type: "notion" as LinkType 
+            }
+        ],
     }
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { experienceData } from '../data';
+import LinkButton from './LinkButton';
 
 const Experience: React.FC = () => {
     return (
@@ -12,6 +13,11 @@ const Experience: React.FC = () => {
                 <p className="experience-date">{exp.date}</p>
                 <h3 className="experience-title">{exp.title}</h3>
                 <p className="experience-description">{exp.desc}</p>
+                <LinkButton
+                    href={exp.url}
+                    type={exp.type}
+                    note={exp.note}
+                />
                 </div>
             ))}
             </div>

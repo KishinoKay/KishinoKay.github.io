@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Work } from '../types';
 import { worksData } from '../data';
+import LinkButton from './LinkButton';
 
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -56,28 +57,14 @@ const Works: React.FC<Props> = ({ onWorkClick }) => {
                     <h3 className="work-title">{work.title}</h3>
                     <div className="work-summary">{work.summary}</div>
                     <div className="work-links">
-                    {work.links.github && (
-                        <a 
-                        href={work.links.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="work-link github" 
-                        onClick={(e) => e.stopPropagation()}
-                        >
-                        <i className="fa-brands fa-github"></i> GitHub
-                        </a>
-                    )}
-                    {work.links.youtube && (
-                        <a 
-                        href={work.links.youtube} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="work-link youtube" 
-                        onClick={(e) => e.stopPropagation()}
-                        >
-                        <i className="fa-brands fa-youtube"></i> YouTube
-                        </a>
-                    )}
+                    {work.links.map((link, index) => (
+                        <LinkButton
+                            key={index}
+                            href={link.url}
+                            type={link.type}
+                            note={link.note} // ボタンの文字を指定
+                        />
+                    ))}
                     </div>
                 </div>
                 </div>
