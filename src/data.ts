@@ -7,7 +7,7 @@ export const worksData: Work[] = [
         id: "map",
         title: "デジタル2D-3D構内マップ",
         summary: "龍谷大学キャンパス内の迷子問題を解決するためのWebアプリ。",
-        images: ["public/images/PRMap/postaer.png", "public/images/PRMap/happyou.png", "/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
+        images: ["/images/PRMap/postaer.png", "/images/PRMap/happyou.png", "/images/PRMap/image.png", "/images/PRMap/2025-10-12 035845.png", "/images/PRMap/2025-10-12 035112.png"],
         video: null,
         links: [
             {label: "アプリを開く",url: "https://r-navi.math.ryukoku.ac.jp/", type: "other" as LinkType },
