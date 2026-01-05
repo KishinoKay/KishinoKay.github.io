@@ -41,7 +41,8 @@ export const worksData: Work[] = [
         video: "https://www.youtube.com/embed/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM",
         links: [
             {url: "https://github.com/kc3hack/2025_21", type: "github" as LinkType },
-            {url: "https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM", type: "youtube" as LinkType }
+            {url: "https://youtu.be/D4d2Q8z6aSA?si=oucsI7N2TbInVAJM", type: "youtube" as LinkType },
+            {url: "https://oil-bobcat-321.notion.site/KC3Hack-2025-2df9a84f9a5d8065a4fdc0fa113f6b25?source=copy_link", type: "notion" as LinkType }
         ],
         details: {
         overview: "KC3Hack 2025（関西情報系学生団体交流会主催）で、実在都市モデルを使った3Dアスレチックゲームを開発。",
