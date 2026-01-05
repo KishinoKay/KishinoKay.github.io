@@ -111,6 +111,88 @@ export const worksData: Work[] = [
             "仕様書・設計書を整備し、共同開発の効率化"
         ]
         }
+    },
+    {
+        id: "handson-adventure",
+        title: "Hands-on Adventure",
+        summary: "「じゃんけん」をテーマにした、ゲーム初心者でも直感的に遊べる2Dアクションゲーム。",
+        images: ["/images/Hands-onAdventure/title.png", "/images/Hands-onAdventure/gameplay.png"],
+        video: null,
+        links: [
+            {url: "https://github.com/KishinoKay/JankenGame", type: "github" as LinkType }
+        ],
+        details: {
+        overview: "「誰もが知っているルール（じゃんけん）」を題材にすることで、ゲーム特有の「お約束」を知らない初心者でも直感的に楽しめるアクションゲームを開発。チーム開発の経験を活かし、初めて個人で本格的な制作を行った作品です。",
+        devPeriod: "2週間 (約50時間)",
+        teamSize: "個人開発",
+        techStack: "Unity, C#",
+        role: "企画、設計、プログラミング、UIデザイン (個人制作)",
+        techPoints: [
+            "シーン遷移時のスムージング処理など、プレイ中の違和感を排除する工夫",
+            "じゃんけんの相性を活用したギミック実装（グーで岩を破壊など）",
+            "水中や空中ステージにおける敵の挙動制御（上下左右からの追尾など）"
+        ],
+        commitment: [
+            "ゲーム初心者への親切さを重視したチュートリアル設計",
+            "複雑な操作を排除し、直感的なUI/UXを実現",
+            "個人制作として企画から実装までを一貫して完遂"
+        ]
+        }
+    },
+    {
+        id: "minutes-app",
+        title: "議事録文字起こしアプリ (製作途中)",
+        summary: "動画・音声データをWhisperで文字起こしし、Gemini APIで要約・清書するWebアプリ。",
+        images: [],
+        video: null,
+        links: [
+            {url: "https://github.com/KishinoKay/minutes_app", type: "github" as LinkType }
+        ],
+        details: {
+        overview: "授業の録音や議事録整理の効率化を目指し、ReactによるWebアプリ開発の学習を兼ねて制作中。動画・音声ファイルを読み込み、ローカルのWhisperモデルで文字起こしを行った後、Gemini APIを活用して文章の清書や要約を生成します。",
+        devPeriod: "1ヶ月〜",
+        teamSize: "個人開発",
+        techStack: "React, Vite, TypeScript, Python, OpenAI Whisper, Gemini API, CSS",
+        role: "企画、設計、実装",
+        techPoints: [
+            "ReactフロントエンドとPythonスクリプトの連携処理",
+            "ローカルAI(Whisper)とクラウドAPI(Gemini)のハイブリッド構成",
+            "テキストファイルやPDFへのドキュメント出力機能"
+        ],
+        commitment: [
+            "自身の課題（授業・議事録整理）を解決する実用的なツールの作成",
+            "ライブラリに頼らないCSSによるスタイリングの実践",
+            "モダンなフロントエンド技術（React/Vite）の習得"
+        ]
+        }
+    },
+    {
+        id: "spy-shogi",
+        title: "間諜将棋 (製作途中)",
+        summary: "奪われた駒が「間諜」として裏切る、疑心暗鬼の心理戦将棋。",
+        images: [],
+        video: null,
+        links: [
+            {url: "https://github.com/sora0627/Spy-Shogi", type: "github" as LinkType }
+        ],
+        details: {
+        overview: "企業のOpenカンパニーで出会った学生3名による共同開発プロジェクト。初対面のメンバーとの本格的なゲーム開発を通じて、技術力向上とチーム開発の経験値を高めることを目的としています。現在はUnityを用いてプロトタイプを開発中で、通常の将棋に「間諜（スパイ）」の要素を加えた心理戦システムの実装を進めています。",
+        devPeriod: "1ヶ月〜 (プロトタイプ開発中)",
+        teamSize: "3人",
+        techStack: "Unity, C#",
+        role: "プロトタイプ開発、持ち駒（駒台）管理ロジックの実装",
+        techPoints: [
+            "持ち駒（駒台）にある間諜駒の状態管理と識別処理",
+            "「間諜」指定による隠匿情報の管理ロジック",
+            "相手ターンへの「即時割り込み（寝返り）」処理の実装",
+            "特殊ルール（二歩・行き所のない駒の無視）の例外処理"
+        ],
+        commitment: [
+            "初対面のメンバーとの連携によるチームビルディング経験",
+            "「いつ裏切るか」という心理的駆け引きのゲームシステム化",
+            "複雑な状態遷移（持ち駒→盤上→裏切り）を含むロジック構築"
+        ]
+        }
     }
 ];
 
