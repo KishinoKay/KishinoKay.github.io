@@ -116,7 +116,7 @@ export const worksData: Work[] = [
         id: "handson-adventure",
         title: "Hands-on Adventure",
         summary: "「じゃんけん」をテーマにした、ゲーム初心者でも直感的に遊べる2Dアクションゲーム。",
-        images: ["/images/Hands-onAdventure/title.png", "/images/Hands-onAdventure/gameplay.png"],
+        images: ["/images/janken/2026-01-06 002429.png", "/images/janken/2026-01-06 002848.png"],
         video: null,
         links: [
             {url: "https://github.com/KishinoKay/JankenGame", type: "github" as LinkType }
