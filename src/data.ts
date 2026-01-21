@@ -210,7 +210,7 @@ export const worksData: Work[] = [
             devPeriod: "2週間",
             teamSize: "5人",
             techStack: "Unity, Blender, Discord, GitHub, Notion, Canva",
-            role: "PM (プロジェクトマネージャー)、Blenderモデリング、UIパーツ作成",
+            role: "PM、タイトル画面作成、 動画制作",
             techPoints: [
                 "プレイヤーの入力有無に応じて `Time.timeScale` を操作し、時間を0.05倍速〜1.0倍速へ可変させるシステム",
                 "線形補間 (Lerp) を用いた、時間変化の滑らかな遷移実装",
