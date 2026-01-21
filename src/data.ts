@@ -202,7 +202,8 @@ export const worksData: Work[] = [
         images: [], // 画像データは提供されていないため空配列
         video: "https://www.youtube.com/embed/ygovpOaFezE?si=MVH0o5SxybAoxVHW",
         links: [
-            {url: "https://github.com/KishinoKay/VRsample", type: "github" as LinkType }
+            {url: "https://github.com/KishinoKay/VRsample", type: "github" as LinkType },
+            {url: "https://youtu.be/ygovpOaFezE?si=UY8qIxlL7L2kq4TX", type: "youtube" as LinkType }
         ], // PDFおよび動画内にGitHub等のリンク記載なし
         details: {
             overview: "大学の知能情報メディアセミナーにおいて、空間的な身体性を最大限に活かしたVRアプリケーションを設計・開発。既存のボタン操作ではなく、プレイヤーの動作が物理演算に直結する没入感の高いシステムを構築。",
