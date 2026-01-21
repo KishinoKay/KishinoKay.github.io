@@ -196,6 +196,36 @@ export const worksData: Work[] = [
         }
     },
     {
+        id: "time-is-money",
+        title: "TimeIsMoney",
+        summary: "プレイヤーが止まると時間も遅くなる、戦略的FPSゲーム。龍谷大学瀬田キャンパス7号館を舞台に、敵をすべて倒すことを目指す。",
+        images: [], // 画像データは提供されていないため空配列
+        video: "https://www.youtube.com/embed/QzaIBOHISHo?si=NVy5l0-7S8aY4Nju",
+        links: [
+            {url: "https://youtu.be/QzaIBOHISHo?si=NVy5l0-7S8aY4Nju", type: "youtube" as LinkType },
+            {url: "https://oil-bobcat-321.notion.site/Timeismoney-2ef9a84f9a5d8057951bf5e62c5055bd?source=copy_link", type: "notion" as LinkType }
+        ],
+        details: {
+            overview: "「Timels Money」は、自分も敵も一撃で倒れる緊張感のあるFPS。最大の特徴は『プレイヤーが止まっている間は時間の進みが極端に遅くなる』システムで、弾幕を避けながら慎重に行動する戦略性が求められる [cite: 42, 45, 55]。",
+            devPeriod: "不明",
+            teamSize: "5人",
+            techStack: "Unity, Blender, Discord, GitHub, Notion, Canva",
+            role: "PM (プロジェクトマネージャー)、Blenderモデリング、UIパーツ作成 [cite: 104]",
+            techPoints: [
+                "プレイヤーの入力有無に応じて `Time.timeScale` を操作し、時間を0.05倍速〜1.0倍速へ可変させるシステム [cite: 115, 122]",
+                "線形補間 (Lerp) を用いた、時間変化の滑らかな遷移実装 [cite: 119]",
+                "イベントドリブン設計を採用し、敵AIの「思考・行動」と「ステータス管理」をクラスレベルで分離 [cite: 113, 114]",
+                "実際の龍谷大学瀬田キャンパス7号館をフィールドとして再現 [cite: 56]"
+            ],
+            commitment: [
+                "Discordサーバーでのチャンネル整理（機能別）とボイスチャット常駐による進捗の可視化 [cite: 69, 71]",
+                "GitHubのブランチ命名規則（feature/, fix/等）の制定によるソースコード管理の効率化 [cite: 74, 75]",
+                "Notionデータベースを活用したタスク・進捗の一元管理 [cite: 78]",
+                "Canvaのリアルタイム共同編集機能を活用したプレゼン資料作成 [cite: 84]"
+            ]
+        }
+    },
+    {
         id: "virtual-archery",
         title: "VIRTUAL ARCHERY",
         summary: "VR技術を活用し、身体動作をダイレクトに物理演算へ反映させることで、現実の弓道に近い直感的な操作感を実現したVRアーチェリーシステム。",
@@ -232,6 +262,7 @@ export const worksData: Work[] = [
 export const skillsData: Skill[] = [
     { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
     { name: "C#", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
     { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
     { name: "Unity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" },
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -242,8 +273,12 @@ export const skillsData: Skill[] = [
 
 // 3. 経験データ
 export const experienceData: Experience[] = [
-    { date: "2025年度 - 現在", title: "プロジェクトリサーチ", desc: "チームのPMとして「3D構内マップ」を企画・開発。技術選定からタスク管理、3Dモデリングまで幅広く担当。" },
+    { date: "2025.12 (3日間)", title: "スクウェア・エニックス AIハッカソン", desc: "Pygameを用いて生成AIを組み込んだゲーム開発。" },
+    { date: "2025.09", title: "藤本研究室に配属", desc: "XR Interface Lab (龍谷大学 先端理工学部 知能情報メディア課程 藤本研究室) に配属。研究内容をARを利用したコミュニケーション支援システム開発に決定。" },
+    { date: "2025.08 (5日間)", title: "Sky株式会社 インターン", desc: "ReactとTypeScriptを用いたWebアプリケーションの改修を経験。"},
+    { date: "2025.06 ~ 2025.09", title: "プロジェクトリサーチ", desc: "チームのPMとして「3D構内マップ」を企画・開発。技術選定からタスク管理、3Dモデリングまで幅広く担当。企業賞を受賞しました。" },
     { date: "2025.02 (7日間)", title: "KC3Hack 2025 学生ハッカソン参加", desc: "3人チームのPMとして企画から参加。リアルな都市モデルとAIを活用した3Dゲームを完成させました。" },
+    { date: "2024.9", title: "基本情報技術者試験 合格", desc: "独学の勉強により、基本情報技術者試験に合格。" },
     { date: "大学入学(2023年4月)", title: "龍谷大学 先端理工学部 知能情報メディア課程", desc: "AI・機械学習とXR技術を学習。プログラミング認定同好会Horizon所属" },
     { date: "高校時代(2021年4月〜2022年3月)", title: "SSH 課題研究（化学ゼミ）", desc: "「竹炭による硝酸イオンの吸着」を探究。分光光度計や遠心分離機、恒温槽等の分析機器を用いPPDACサイクルを実践。予想外の実験結果に対し、仮説の再構築や誤差要因の分析を粘り強く行い、科学的なプロセスを体得しました。" , url: "https://oil-bobcat-321.notion.site/SSH-2c09a84f9a5d801bb4acf87dfdcb78aa?source=copy_link", type: "notion" as LinkType , note: "Notionで詳細を見る" },
 ];
