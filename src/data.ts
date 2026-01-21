@@ -194,6 +194,36 @@ export const worksData: Work[] = [
             "複雑な状態遷移（持ち駒→盤上→裏切り）を含むロジック構築"
         ]
         }
+    },
+    {
+        id: "virtual-archery",
+        title: "VIRTUAL ARCHERY",
+        summary: "VR技術を活用し、身体動作をダイレクトに物理演算へ反映させることで、現実の弓道に近い直感的な操作感を実現したVRアーチェリーシステム。",
+        images: [], // 画像データは提供されていないため空配列
+        video: "https://www.youtube.com/embed/ygovpOaFezE?si=MVH0o5SxybAoxVHW",
+        links: [
+            {url: "https://github.com/KishinoKay/VRsample", type: "github" as LinkType }
+        ], // PDFおよび動画内にGitHub等のリンク記載なし
+        details: {
+            overview: "大学の知能情報メディアセミナーにおいて、空間的な身体性を最大限に活かしたVRアプリケーションを設計・開発。既存のボタン操作ではなく、プレイヤーの動作が物理演算に直結する没入感の高いシステムを構築。",
+            devPeriod: "4日", // レポート内に具体的な期間の記載なし
+            teamSize: "1人", // レポートの氏名記載および文脈（「設計・開発した」）より個人開発と推測
+            techStack: "Unity (C#), Blender, VOICEVOX, Audacity",
+            role: "企画、設計、開発、3Dモデリング、サウンド調整",
+            techPoints: [
+                "コントローラー間の距離・角度から弦の引き絞り量を計算する独自の操作系",
+                "物理演算(Rigidbody)とベクトル補正によるリアルな矢の弾道制御",
+                "矢じりとシャフトで異なる物理挙動（刺さる/弾かれる）を実装した衝突判定",
+                "NavMeshを利用した敵AI（追跡・攻撃）とステート管理",
+                "シングルトンパターンによるリソース（音源・ゲーム進行）管理"
+            ],
+            commitment: [
+                "VR酔い対策の視野制限をあえて廃止し、FPSとしての視界確保と没入感を優先",
+                "内積を用いた射影計算により、弦を引く手の位置を正確に判定",
+                "AudioSourceのSpatial Blendを活用し、聴覚で敵位置を特定できる3D音響設計",
+                "クロスフェード処理による自然なBGM遷移"
+            ]
+        }
     }
 ];
 
